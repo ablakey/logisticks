@@ -24,10 +24,30 @@ Implementation:
   - data layer is NOT the objects used by the renderer
   - data layer is purely driven by a render loop and the objects handed to it
 
-
-## Stretch Goals
+### Stretch Goals
 - bezier curves for the driving routes
 
-
-## Non Goals
+### #Non Goals
 - Mobile support
+
+## Phases
+
+### Phase 1 (Render and Interactivity)
+- Ability to draw, render, select:
+  - polygons
+  - lines
+  - sprites
+
+
+### Phase 2 (Main Loop)
+- Spawn sources
+- Spawn sinks
+- Robots moving things from sources to sinks
+- Robots do not collide
+- Robots use paths
+
+
+### Phase 3 (Interactive Game)
+- Figure out what the actual challenge is, then fill out this section.
+
+
