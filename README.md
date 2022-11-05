@@ -38,6 +38,17 @@ Implementation:
   - lines
   - sprites
 
+#### Plan
+- Abstraction over Pixi with a class
+  - accepts objects in
+  - callbacks when things get edited
+  - layer system
+  - symbology system
+
+Do NOT use immutability pattern. Have callbacks edit objects in-place.
+
+TEST PERFORMANCE HERE
+
 
 ### Phase 2 (Main Loop)
 - Spawn sources
