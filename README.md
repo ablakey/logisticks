@@ -1,5 +1,33 @@
-# RENAME_ME
+# logisticks
 
-A watched pot never boilerplates.
+An interactive demonstration of robots flowing through an area, moving stuff from sources to sinks.
 
-Yes, this is just my personal boilerplate for the minimal _comfortable_ configuration.
+## Goals
+
+A Canvas-based UI:
+- polygons (obstacles/walls)
+- lines (a graph of driving routes)
+- sprites (SVG based, doesn't have to animate)
+- configurable symbology
+
+Interactivity:
+- Can click on a polygon and edit it
+  - handles on vertexes
+  - different symbology for selected
+- Can click and edit paths
+  - snapping to other paths
+- Can smoothly zoom and pan with mouse
+
+Implementation:
+- Layer-based system
+- presentation layer is decoupled from data layer
+  - data layer is NOT the objects used by the renderer
+  - data layer is purely driven by a render loop and the objects handed to it
+
+
+## Stretch Goals
+- bezier curves for the driving routes
+
+
+## Non Goals
+- Mobile support
